@@ -28,8 +28,8 @@ public class ChatTcpThred extends Thread {
                 ChatSocket chatSocket = new ChatSocket(socket);
                 chatSocket.start();
                 ChatManger.getChatManger().addChatSocket(chatSocket);
-
             }
+
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -16,7 +16,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/shape_btn"
             android:onClick="onClick"
-            android:text="@string/tcp" />
+            android:text="TCP通信"
+            android:textColor="#fff" />
 
 
     </com.example.communicationdemo.view.FluidLayout>

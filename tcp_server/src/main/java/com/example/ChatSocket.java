@@ -25,23 +25,13 @@ public class ChatSocket extends Thread {
      * @param out
      */
     public void writeOther(String out) {
-        BufferedWriter writer = null;
         try {
-            System.out.print(out + "\n");
-            writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
             writer.write(out + "\n");
             //强制输出
             writer.flush();
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            if (writer != null) {
-                try {
-                    writer.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
         }
 
     }
@@ -50,25 +40,18 @@ public class ChatSocket extends Thread {
     public void run() {
         //读的操作
         //实例化一个输入流
-        BufferedReader reader = null;
         try {
-            reader = new BufferedReader(new InputStreamReader(socket.getInputStream(), "UTF-8"));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream(), "UTF-8"));
             String line;
             while ((line = reader.readLine()) != null) {
                 //发送
-                System.out.print(line + "\n");
                 ChatManger.getChatManger().pulshMessger(this, line);
             }
+            reader.close();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            if (reader != null) {
-                try {
-                    reader.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
+
         }
 
     }

@@ -33,9 +33,9 @@ public class ChatManger {
             //获取实例
             ChatSocket chatSocket = chatSockets.get(i);
             //不是本连接的时候发送
-            if (socket.equals(chatSocket)) {
+            if (!socket.equals(chatSocket)) {
                 //发送
-                socket.writeOther(out);
+                chatSocket.writeOther(out);
             }
         }
     }
