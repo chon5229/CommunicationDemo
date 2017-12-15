@@ -19,6 +19,15 @@
             android:text="TCP通信"
             android:textColor="#fff" />
 
+        <Button
+            android:id="@+id/udp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn"
+            android:onClick="onClick"
+            android:text="UDP通信"
+            android:textColor="#fff" />
+
 
     </com.example.communicationdemo.view.FluidLayout>
 

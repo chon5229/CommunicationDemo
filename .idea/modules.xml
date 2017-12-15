@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/CommunicationDemo.iml" filepath="$PROJECT_DIR$/CommunicationDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/tcp_server/tcp_server.iml" filepath="$PROJECT_DIR$/tcp_server/tcp_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/udp_server/udp_server.iml" filepath="$PROJECT_DIR$/udp_server/udp_server.iml" />
     </modules>
   </component>
 </project>

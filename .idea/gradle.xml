@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/tcp_server" />
+            <option value="$PROJECT_DIR$/udp_server" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
