@@ -1,0 +1,8 @@
+这是一个java工程
+配置了一个聊天室的环境
+
+控制台如果输出乱码，
+build.gradle中添加：
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

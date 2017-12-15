@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CommunicationDemo</string>
+    <string name="tcp">TCP通信</string>
+</resources>
