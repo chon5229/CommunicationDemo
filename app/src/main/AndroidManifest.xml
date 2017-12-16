@@ -23,7 +23,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.ChatTcpActivity" />
-        <activity android:name=".ui.ChatUdpActivity"></activity>
+        <activity android:name=".ui.ChatUdpActivity" />
+        <activity android:name=".ui.ChatUdpGroupActivity"></activity>
     </application>
 
 </manifest>

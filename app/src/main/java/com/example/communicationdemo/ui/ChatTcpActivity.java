@@ -30,6 +30,7 @@ import java.util.List;
 
 /**
  * TCP通信(模拟聊天室)
+ * 本项目所有ip地址根据情况改成自己的
  */
 public class ChatTcpActivity extends AppCompatActivity {
 
